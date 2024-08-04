@@ -29,6 +29,11 @@ export function TrendingFoods() {
     }, [])
 
  return (
-   <FlatList data={foods} horizontal={true} renderItem={ ({ item }) => <CardHorizontalFood food={item} />}/>
+   <FlatList data={foods}
+    horizontal={true}
+    renderItem={ ({ item }) => <CardHorizontalFood food={item} />}
+    showsHorizontalScrollIndicator={false}
+    
+    />
   );
 }
